@@ -1,5 +1,11 @@
+import "./Wellcome.css";
+
 const Wellcome = () => {
-  return <div>User Name</div>;
+  return (
+    <>
+      <div className="username">User Name</div>
+    </>
+  );
 };
 
 export default Wellcome;
