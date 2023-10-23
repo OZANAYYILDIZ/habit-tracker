@@ -1,9 +1,10 @@
 import "./App.css";
+import Wellcome from "./components/Welcome/Wellcome";
 
 function App() {
   return (
     <>
-      <h1>Habit Tracker!</h1>
+      <Wellcome />
     </>
   );
 }
