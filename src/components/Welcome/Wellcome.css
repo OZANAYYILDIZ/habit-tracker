@@ -1,3 +1,18 @@
+.user {
+  height: 60px;
+  box-shadow: 0 0 2px 0 #d9d9d9;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile-pic {
+  height: 100%;
+  padding: 0;
+  border-radius: 50%;
+}
+
 .username {
-  border: 1px solid #000;
+  margin-left: 20px;
+  font-size: 24px;
 }
