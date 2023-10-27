@@ -1,8 +1,12 @@
 import "./AddNewHabit.css";
 import { useState } from "react";
 
+let habitArr = [];
+
 const AddNewHabit = () => {
   const [inputValue, setInputValue] = useState("");
+
+  let [addHabitArr, setAddHabitArr] = useState("");
 
   const handleOnChange = (e) => {
     setInputValue(e.target.value);
@@ -10,6 +14,10 @@ const AddNewHabit = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("new habit submitted " + inputValue);
+    addHabitArr = { inputValue };
+    setAddHabitArr(addHabitArr);
+    habitArr.push(addHabitArr);
+    console.log(habitArr);
   };
   return (
     <form onSubmit={handleSubmit}>
